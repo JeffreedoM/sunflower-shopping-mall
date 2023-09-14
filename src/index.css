@@ -1,0 +1,16 @@
+* {
+  font-family: "montserrat", sans-serif;
+}
+body {
+  --tw-bg-opacity: 1;
+  /* background-color: rgb(254 215 170 / var(--tw-bg-opacity)); */
+  background-color: #f5f5f5;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.wrapper {
+  @apply mx-auto w-full max-w-screen-xl px-3 xl:px-0;
+}
