@@ -5,6 +5,7 @@ export default function Cart() {
   const { items, addQuantity, decreaseQuantity, deleteToCart } =
     useContext(CartContext);
 
+  console.log(items);
   return (
     <div className="wrapper mt-[12vh]">
       <div className="mb-3 flex items-center bg-white p-3 pl-10 text-center">
@@ -18,7 +19,7 @@ export default function Cart() {
         <div className=" py-8 text-center">Cart is empty</div>
       ) : (
         items.map((item) => {
-          const { product } = item;
+          // const { product } = item;
           return (
             <>
               <div

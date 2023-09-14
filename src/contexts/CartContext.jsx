@@ -26,8 +26,10 @@ export function CartProvider({ children }) {
         if (item.id === id) {
           return { ...item, quantity: item.quantity + 1 };
         }
+        return item;
       });
     });
+    console.log(items);
   };
   const decreaseQuantity = (id) => {
     setItems((prevState) => {
@@ -39,8 +41,10 @@ export function CartProvider({ children }) {
             return { ...item, quantity: item.quantity - 1 };
           }
         }
+        return item;
       });
     });
+    console.log(items);
   };
 
   const deleteToCart = (id) => {
