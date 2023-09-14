@@ -29,8 +29,8 @@ export function CartProvider({ children }) {
         return item;
       });
     });
-    console.log(items);
   };
+  
   const decreaseQuantity = (id) => {
     setItems((prevState) => {
       return prevState.map((item) => {
@@ -44,7 +44,6 @@ export function CartProvider({ children }) {
         return item;
       });
     });
-    console.log(items);
   };
 
   const deleteToCart = (id) => {
