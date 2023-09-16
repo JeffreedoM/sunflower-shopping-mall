@@ -10,8 +10,8 @@ function App() {
       <CartProvider>
         <Nav />
         <Routes>
-          <Route path="/cart" element={<Cart />} />
           <Route path="/" element={<Products />} />
+          <Route path="/cart" element={<Cart />} />
         </Routes>
       </CartProvider>
     </>
