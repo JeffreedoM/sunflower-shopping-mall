@@ -108,7 +108,7 @@ export default function Cart() {
               <>
                 <div
                   key={item.id}
-                  className="mb-3 flex items-center bg-white p-3 pl-10 text-center "
+                  className="mb-3 flex min-h-[110px] items-center bg-white p-3 pl-10 text-center "
                 >
                   <div className="flex w-[40%] items-center gap-3 text-left">
                     <img
