@@ -40,7 +40,7 @@ export default function Cart() {
                   className="relative mb-3 flex gap-3 bg-white p-3 "
                 >
                   {/* Product Image */}
-                  <div>
+                  <div className="mt-4">
                     <img
                       src={item.image}
                       alt={item.title}
